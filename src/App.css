@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family:; */
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #6215f9;
+}
+
+.responsive {
+  position: absolute;
+  /* right: 100%;  */
+  left: 50% !important; /* Adjust left position to cover half of the screen */
+  width: 100%; /* Set the width to cover half of the screen */
+  animation: slideFromRight 0.5s ease both; /* Apply animation to slide in from the right */
+  height: 100%;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.firstSection {
+  background-image: url("../src/assets/Banner1.png");
+  width: 100%;
+  height: 100vh;
+  aspect-ratio: 16/9;
+
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+.firstSection {
+  background-image: url("../src/assets/Banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  height: 100vh;
+  width: 100%;
+  /* max-width: calc(100vh * (16 / 9)); */
+}
+.dc-icon {
+  background-image: url("../src/assets/Banner2.png");
+  background-position: center;
+  background-size: contain;
+}
+/* .visit-section {
+  background-color: #f2f2f2;
+}
+.visit-section :hover {
+  background-color: #fad707;
+  transition: all 0.2s ease;
+} */
+.visit-section :hover .visit-button {
+  background-color: #6215f9;
+  color: white;
+  border: none;
+}
+.seven-sub {
+  background-image: url("../src/assets/background1.png");
+}
+.second-sec {
+  background-image: url("../src/assets/background1.png");
+}
+.ninth-sec {
+  background-image: url("../src/assets/Banner2.png");
+  background-position: center;
+  background-size: contain;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  color: yellow !important;
+}
+footer {
+  font-family: "Morganite", Sans-serif;
+}
